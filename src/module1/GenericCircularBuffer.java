@@ -1,4 +1,4 @@
-package module1.main.java.com.monotonic.generics._1_what_and_why_of_generics;
+package module1;
 
 public class GenericCircularBuffer<T>
 {

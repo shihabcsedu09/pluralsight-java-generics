@@ -1,10 +1,10 @@
-package module1.main.java.com.monotonic.generics._1_what_and_why_of_generics;
+package module1;
 
-public class GenericExample
+public class TypeSafeExample
 {
     public static void main(String[] args)
     {
-        GenericCircularBuffer<String> buffer = new GenericCircularBuffer<String>(10);
+        StringCircularBuffer buffer = new StringCircularBuffer(10);
 
         buffer.offer("a");
         buffer.offer("bc");
@@ -16,7 +16,7 @@ public class GenericExample
         System.out.println(value);
     }
 
-    private static String concatenate(GenericCircularBuffer<String> buffer)
+    private static String concatenate(StringCircularBuffer buffer)
     {
         StringBuilder result = new StringBuilder();
 

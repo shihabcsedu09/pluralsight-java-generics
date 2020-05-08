@@ -1,17 +1,17 @@
-package module1.main.java.com.monotonic.generics._1_what_and_why_of_generics;
+package module1;
 
-public class StringCircularBuffer
+public class CircularBuffer
 {
-    private final String[] buffer;
+    private final Object[] buffer;
     private int readCursor = 0;
     private int writeCursor = 0;
 
-    public StringCircularBuffer(int size)
+    public CircularBuffer(int size)
     {
-        buffer = new String[size];
+        buffer = new Object[size];
     }
 
-    public boolean offer(String value)
+    public boolean offer(Object value)
     {
         if (buffer[writeCursor] != null)
         {
@@ -23,9 +23,9 @@ public class StringCircularBuffer
         return true;
     }
 
-    public String poll()
+    public Object poll()
     {
-        String value = buffer[readCursor];
+        Object value = buffer[readCursor];
         if (value != null)
         {
             buffer[readCursor] = null;
