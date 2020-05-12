@@ -1,6 +1,7 @@
 package module5.unbounded;
 
-import com.monotonic.generics._5_wildcards.bounded.Person;
+
+import module5.bounded.Person;
 
 import java.util.ArrayList;
 import java.util.List;
