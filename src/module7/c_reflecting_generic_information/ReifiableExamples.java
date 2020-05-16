@@ -14,6 +14,7 @@ public class ReifiableExamples
 
     }
 
+
     public static void main(String[] args)
     {
         List<String> strings = new ArrayList<>();
